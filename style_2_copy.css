@@ -14,7 +14,7 @@ font-family: 'Roboto', sans-serif;
 
 #container_blog {
 	display: grid;
-	grid-template-rows: 200px minmax(500px,auto) 100px;
+	grid-template-rows: 200px minmax(500px,auto) 150px;
 	grid-template-columns: 20% 60% 20%;
 	grid-template-areas: 'a a a'
 						 'b c d'
@@ -27,11 +27,17 @@ header {
 	background-size: cover;
 	overflow: hidden;
 	display: flex;
-	justify-content: flex-start; 
-	padding-left: 65px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 75px;
 }
 
-header h1 {
+#landing_page_header_logo {
+	font-size: 40px;
+	color: white;
+}
+
+#blog_header_logo  {
 	font-size: 40px;
 	color: white;
 }
@@ -115,80 +121,112 @@ blockquote {
 	font-style: italic;
 }
 
-footer div {
+#blog_footer {
 	grid-area: e;
 	background-color: rgb(242,244,246);
-	display: flex;
+	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+}
+
+#landing_page_footer {
+	grid-area: e;
+	background-color: rgb(242,244,246);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 
-#footer_logo h1 {
+#footer_logo {
 	font-size: 40px;
 	color: rgb(113,122,128);
 }
 
-#footer_copyright p {
+#footer_copyright {
 	font-size: 9px;
 	font-weight: bold;
 	color: rgb(113,122,128);
-	padding-bottom: 15px;
 }
 
 #aside_one {
 	grid-area: b;
-	background: green;
+	padding-left: 50px;
+}
+
+#aside_one ul {
+	list-style-type: none;
 }
 
 #blog_content {
 	grid-area: c;
-	background: yellow;
 	font-family: roboto sans-serif;
 }
 
 #aside_two {
 	grid-area: d;
-	background: blue;
 }
 
-.blog1_photo {
+#aside_two h2 {
+	text-align: center;
+}
+
+.blog1_photo img {
 	height: 350px;
-	width:minmax (400px,auto);
-	background-image: url("blog1.jpg");
-	background-repeat: none;
-	background-size: cover;
+	width:850px;
 }
 
-.blog2_photo {
+.blog2_photo img {
 	height: 250px;
-	width:minmax (400px,auto);
-	background-image: url("blog2.jpg");
-	background-repeat: none;
-	background-size: cover;
+	width: 850px;
 }
 
-.aside_photo_one {
-	background-image: url("app.jpg");
-	background-size: cover;
-	height: 200;
-	width:minmax (100px,auto);
+.date_published {
+	font-style: italic;
+	color: rgb(113,122,128);
 }
 
-.aside_photo_two {
-	background-image: url("app2.jpg");
-	background-size: cover;
-	height: 200;
-	width:minmax (100px,auto);
+#aside_photo_one img {
+	height: 200px;
+	width: 300px;
+}
+
+#aside_photo_two img {
+	height: 200px;
+	width: 300px;
+}
+
+#navbar {
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
 }
 
 nav ul {
 	display: flex;
 	justify-content: flex-end;
-	margin-right: 200px;
 }
 
 nav li {
 	color: white;
 	padding: 0px 25px;
 }
+
+article {
+	font-family: 'Roboto', sans-serif;
+}
+
+article h1 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#aside_one li {
+	font-weight: lighter;
+}
+
